@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Face Recognition</title>
   </head>
-  <body>
+  <div>
     <h1 class="face-recognition__title">Face Recognation</h1>
-    <video class="face-recognition__video" autoplay muted></video>
 
-    <script src="./libs/face-api.js"></script> <!-- Nossa neural -->
+    <div class="face-recognition__wrapper" id="canvas-placeholder">
+      <video class="face-recognition__video" autoplay muted></video>
+    </div>
+
+    <script src="./libs/face-api.min.js"></script> <!-- Nossa neural -->
     <script src="./javascripts/common.js"></script> <!-- Nosso script/lógica -->
   </body>
 </html>

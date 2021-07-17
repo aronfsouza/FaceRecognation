@@ -1,4 +1,4 @@
-# FaceRecognation
+# FaceRecognition
 Projeto de reconhecimento facial.
 
 # Links
