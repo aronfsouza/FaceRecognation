@@ -31,10 +31,10 @@ window.onload = async () => {
     setInterval(async () => {
       // realizamos as detecções
       const result = await faceapi.detectSingleFace(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions().withAgeAndGender();
-
+    
       // se não detectamos nada, retornamos para não seguir com a lógica
       if (!result) return;
-
+    
       // pegamos o resultado das detecções
       const resizedDetections = faceapi.resizeResults(result, videoBoundingClientRect);
 
@@ -77,4 +77,4 @@ window.onload = async () => {
 // função que retorna o maior valor de um objeto
 const expressionAccuracy = function(expressions) {
   return Object.keys(expressions).reduce(function(a, b){ return expressions[a] > expressions[b] ? a : b });
-}
+};
